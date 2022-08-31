@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas de JQuery</title>
+</head>
+
+<body>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam error facere reprehenderit optio ullam fuga
+        dicta labore quo saepe, facilis quasi cupiditate explicabo sunt eius magni esse? Dicta, expedita iusto.
+    </p>
+    <p id="teste">Isso é um paragrafo de teste</p>
+    <p class="p-yellow">Outro paragrafo</p>
+
+    <div class="p-yellow">
+        
+    </div>
+
+    <button id="botao" style="padding: 50px;">Clique Aqui</button>
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+
+        //jQuery
+        $("#teste").html("teste");
+        $('p').addClass('nome-da-classe');
+        $(document).ready(function () {
+            $('#teste').html('Inserido com jQuery')
+        });
+        $(document).ready(function() {
+            $("#botao").click(function() {
+                alert('Clicou no botão!')
+            })
+            $('#teste').click(function() {
+                $(this).html('Mudei quando fui clicado')
+            })
+        })
+
+    </script>
+</body>
+
+</html>
